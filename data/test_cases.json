@@ -1,0 +1,44 @@
+[
+  {
+    "id": "test_001",
+    "query": "What are the main types of machine learning?",
+    "expected_answer": "The three main types of machine learning are supervised learning, unsupervised learning, and reinforcement learning. Supervised learning uses labeled data to train models, unsupervised learning finds patterns in unlabeled data, and reinforcement learning learns through interaction with an environment.",
+    "context": "Machine learning is a subset of artificial intelligence that focuses on algorithms that can learn from data. There are three main types of machine learning: supervised learning, unsupervised learning, and reinforcement learning.",
+    "category": "AI/ML"
+  },
+  {
+    "id": "test_002",
+    "query": "How does RAG work?",
+    "expected_answer": "RAG (Retrieval-Augmented Generation) works by first retrieving relevant documents from a knowledge base using the user's query, then using those documents as context for generating a response. This approach helps reduce hallucinations and provides more accurate, up-to-date information.",
+    "context": "Retrieval-Augmented Generation (RAG) is a technique that combines information retrieval with text generation to improve the accuracy and relevance of AI responses. RAG works by first retrieving relevant documents from a knowledge base using the user's query, then using those documents as context for generating a response.",
+    "category": "RAG"
+  },
+  {
+    "id": "test_003",
+    "query": "What are vector databases used for?",
+    "expected_answer": "Vector databases are specialized databases designed to store and query high-dimensional vectors efficiently. They are essential for similarity search applications in machine learning and AI, particularly for finding similar embeddings quickly.",
+    "context": "Vector databases are specialized databases designed to store and query high-dimensional vectors efficiently. They are essential for similarity search applications in machine learning and AI.",
+    "category": "Vector Search"
+  },
+  {
+    "id": "test_004",
+    "query": "What are the key evaluation metrics for LLMs?",
+    "expected_answer": "Key evaluation metrics for LLMs include task success (whether the model completes the requested task), faithfulness (consistency with provided context), answer relevancy (how well the answer addresses the query), context recall (coverage of relevant information), and context precision (relevance of retrieved information).",
+    "context": "Key evaluation dimensions include task success (whether the model completes the requested task), faithfulness (consistency with provided context), answer relevancy (how well the answer addresses the query), context recall (coverage of relevant information), and context precision (relevance of retrieved information).",
+    "category": "Evaluation"
+  },
+  {
+    "id": "test_005",
+    "query": "What are the main challenges in NLP?",
+    "expected_answer": "The main challenges in Natural Language Processing include ambiguity, context understanding, and handling different languages and dialects. These challenges make it difficult for computers to fully understand and generate human language.",
+    "context": "The main challenges in NLP include ambiguity, context understanding, and handling different languages and dialects. Recent advances in large language models have significantly improved the quality of NLP applications.",
+    "category": "NLP"
+  },
+  {
+    "id": "test_006",
+    "query": "What should be considered when building production AI systems?",
+    "expected_answer": "When building production AI systems, important considerations include scalability, reliability, maintainability, model versioning, A/B testing, monitoring, logging, error handling, performance optimization, security, and deployment strategies.",
+    "context": "Building production AI systems requires careful consideration of scalability, reliability, and maintainability. Important considerations include model versioning, A/B testing, monitoring, logging, and error handling.",
+    "category": "Production"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "doc_001",
+    "title": "Machine Learning Fundamentals",
+    "content": "Machine learning is a subset of artificial intelligence that focuses on algorithms that can learn from data. There are three main types of machine learning: supervised learning, unsupervised learning, and reinforcement learning. Supervised learning uses labeled data to train models, unsupervised learning finds patterns in unlabeled data, and reinforcement learning learns through interaction with an environment. Popular algorithms include linear regression, decision trees, neural networks, and support vector machines. The key steps in a machine learning project are data collection, data preprocessing, model training, model evaluation, and model deployment.",
+    "metadata": {
+      "category": "AI/ML",
+      "difficulty": "beginner",
+      "author": "AI Research Team"
+    }
+  },
+  {
+    "id": "doc_002", 
+    "title": "Natural Language Processing Overview",
+    "content": "Natural Language Processing (NLP) is a field of artificial intelligence that focuses on the interaction between computers and human language. NLP enables computers to understand, interpret, and generate human language in a valuable way. Key applications include machine translation, sentiment analysis, text summarization, question answering, and chatbots. Modern NLP relies heavily on transformer architectures and pre-trained language models like BERT, GPT, and T5. The main challenges in NLP include ambiguity, context understanding, and handling different languages and dialects. Recent advances in large language models have significantly improved the quality of NLP applications.",
+    "metadata": {
+      "category": "NLP",
+      "difficulty": "intermediate",
+      "author": "NLP Research Group"
+    }
+  },
+  {
+    "id": "doc_003",
+    "title": "Retrieval-Augmented Generation (RAG)",
+    "content": "Retrieval-Augmented Generation (RAG) is a technique that combines information retrieval with text generation to improve the accuracy and relevance of AI responses. RAG works by first retrieving relevant documents from a knowledge base using the user's query, then using those documents as context for generating a response. This approach helps reduce hallucinations and provides more accurate, up-to-date information. The RAG pipeline typically includes document indexing, query processing, retrieval, and generation steps. Popular implementations use vector databases like ChromaDB or Pinecone for efficient similarity search. RAG is particularly useful for question-answering systems, chatbots, and knowledge management applications.",
+    "metadata": {
+      "category": "RAG",
+      "difficulty": "intermediate",
+      "author": "AI Systems Team"
+    }
+  },
+  {
+    "id": "doc_004",
+    "title": "Vector Databases and Embeddings",
+    "content": "Vector databases are specialized databases designed to store and query high-dimensional vectors efficiently. They are essential for similarity search applications in machine learning and AI. Embeddings are dense vector representations of text, images, or other data that capture semantic meaning. Popular embedding models include Word2Vec, GloVe, BERT, and sentence transformers. Vector databases use algorithms like approximate nearest neighbor (ANN) search to find similar vectors quickly. Common vector database solutions include ChromaDB, Pinecone, Weaviate, and Milvus. The choice of embedding model and vector database depends on factors like accuracy requirements, query speed, and scalability needs.",
+    "metadata": {
+      "category": "Vector Search",
+      "difficulty": "intermediate",
+      "author": "Data Engineering Team"
+    }
+  },
+  {
+    "id": "doc_005",
+    "title": "LLM Evaluation Methods",
+    "content": "Evaluating Large Language Models (LLMs) requires comprehensive metrics that assess different aspects of performance. Key evaluation dimensions include task success (whether the model completes the requested task), faithfulness (consistency with provided context), answer relevancy (how well the answer addresses the query), context recall (coverage of relevant information), and context precision (relevance of retrieved information). Evaluation can be done through automated metrics, human evaluation, or hybrid approaches. Common evaluation frameworks include BLEU, ROUGE, BERTScore, and custom task-specific metrics. Proper evaluation requires diverse test sets, statistical significance testing, and consideration of edge cases and failure modes.",
+    "metadata": {
+      "category": "Evaluation",
+      "difficulty": "advanced",
+      "author": "ML Evaluation Team"
+    }
+  },
+  {
+    "id": "doc_006",
+    "title": "Production AI System Design",
+    "content": "Building production AI systems requires careful consideration of scalability, reliability, and maintainability. Key architectural patterns include microservices, API gateways, load balancers, and containerization. Important considerations include model versioning, A/B testing, monitoring, logging, and error handling. Performance optimization techniques include model quantization, caching, batch processing, and asynchronous processing. Security considerations include input validation, rate limiting, authentication, and data privacy. Deployment strategies include blue-green deployments, canary releases, and gradual rollouts. Monitoring should track both technical metrics (latency, throughput, error rates) and business metrics (user satisfaction, task completion rates).",
+    "metadata": {
+      "category": "Production",
+      "difficulty": "advanced",
+      "author": "Platform Engineering Team"
+    }
+  }
+]
