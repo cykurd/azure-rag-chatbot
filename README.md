@@ -18,7 +18,7 @@ A sophisticated Retrieval-Augmented Generation (RAG) chatbot built with Flask, f
 - **Logging**: Comprehensive logging for debugging and monitoring
 
 ### Web Interface
-- **Simple Chat Interface**: Clean, ChatGPT-like interface
+- **Simple Chat Interface**: Clean, chat interface
 - **Real-time Responses**: Fast, responsive chat experience
 - **Status Monitoring**: Built-in system status and health checks
 
