@@ -1,5 +1,5 @@
 """
-Advanced RAG-Enabled Language Model with Comprehensive Retrieval and Generation Capabilities
+RAG-Enabled LM with Advanced Retrieval and Generation Capabilities
 
 This module provides a sophisticated base model implementation with advanced RAG features
 including query expansion, reranking, diversity selection, and multiple retrieval methods.
