@@ -37,7 +37,7 @@ class RetrievalResult:
     rerank_score: Optional[float] = None
     final_score: Optional[float] = None
 
-class QueryExpander:
+class QueryRewriter:
     """Generates lightweight variations of the query using basic reformulation and keyword extraction
     
     For example:
@@ -87,6 +87,23 @@ class QueryExpander:
         # Split into words and remove short/common ones
         words = re.findall(r'\b\w+\b', query.lower())
         return [word for word in words if word not in stop_words and len(word) > 2]
+
+class QueryExpansion:
+    """Advanced query expansion using semantic similarity and synonym generation
+    
+    Note: The RAG system performed so much better with query rewriting that 
+    I didn't have to move into full query expansion. This class is included
+    for completeness and future enhancement if needed.
+    """
+    
+    def __init__(self):
+        # Placeholder for future implementation
+        pass
+    
+    def expand_query(self, query: str) -> List[str]:
+        """Expand query using advanced techniques like semantic similarity"""
+        # Future implementation would use word embeddings, synonyms, etc.
+        return [query]  # For now, just return original query
 
 class AdvancedReranker:
     """Reranks retrieved documents using multiple relevance signals to improve ordering"""
@@ -283,7 +300,7 @@ class BaseModel:
 
         # Lazy-loaded enhanced components
         self._enhanced_components_initialized = False
-        self._query_expander = None
+        self._query_rewriter = None
         self._advanced_reranker = None
         self._diversity_selector = None
 
@@ -377,7 +394,7 @@ class BaseModel:
         """Lazy initialization of enhanced components"""
         if not self._enhanced_components_initialized and self.retrieval_method == 'enhanced':
             if self.query_expansion:
-                self._query_expander = QueryExpander()
+                self._query_rewriter = QueryRewriter()
             if self.advanced_reranking:
                 self._advanced_reranker = AdvancedReranker()
             if self.diversity_selection:
@@ -453,8 +470,8 @@ class BaseModel:
             processed_results = results.copy()
             
             # Optional: expand query terms and adjust scores based on overlap
-            if self.query_expansion and self._query_expander:
-                expanded_queries = self._query_expander.expand_query(query)
+            if self.query_expansion and self._query_rewriter:
+                expanded_queries = self._query_rewriter.expand_query(query)
                 for result in processed_results:
                     for expanded_query in expanded_queries:
                         overlap = self._calculate_overlap(expanded_query, result.content)
